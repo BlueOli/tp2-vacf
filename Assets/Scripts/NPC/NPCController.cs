@@ -9,7 +9,7 @@ public class NPCController : MonoBehaviour
     public float pushForce = 10f;
     public float minDistanceToTarget = 1f;  // Minimum distance to target before stopping
     public float pushDistanceThreshold = 2f; // Distance threshold to trigger pushing action
-    public float pushCooldown = 3f; // Cooldown period for pushing action
+    public float pushCooldown = 2f; // Cooldown period for pushing action
 
     public bool isGrabbed = false;
     public bool isDead = false;
@@ -18,11 +18,11 @@ public class NPCController : MonoBehaviour
     private float pushTimer = 0f; // Timer for push cooldown
 
     public GameObject centerTarget; // The center target position
-    public float timeToSwitchBehavior = 10f; // Time to switch behavior in seconds
+    public float timeToSwitchBehavior = 8f; // Time to switch behavior in seconds
     private bool hasReachedCenter = false; // Flag to indicate if NPC has reached the center
     private float firstMoveElapsedTime = 0f; // Elapsed time since moving to center
     private float stillElapsedTime = 0f; // Elapsed time since standing still
-    public float standTillTime = 10f; // Time to stop standing still
+    public float standTillTime = 8f; // Time to stop standing still
     public bool canMove = false; // Flag to know if NPCs can move
 
     void Start()

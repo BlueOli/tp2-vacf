@@ -30,6 +30,8 @@ public class GameManager : MonoBehaviour
 
         endGameText.text = "";
         endGameText.gameObject.SetActive(false);
+
+        Time.timeScale = 1f;
     }
 
     void Update()

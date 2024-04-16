@@ -152,3 +152,11 @@ MonoBehaviour:
   rotationSpeed: 3
   pushForce: 10
   minDistanceToTarget: 1
+  pushDistanceThreshold: 2
+  pushCooldown: 2
+  isGrabbed: 0
+  isDead: 0
+  centerTarget: {fileID: 0}
+  timeToSwitchBehavior: 8
+  standTillTime: 8
+  canMove: 0

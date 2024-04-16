@@ -9,9 +9,12 @@ public class NPCSpawner : MonoBehaviour
     public float spawnRadius = 5f; // Radius of the circle where NPCs will be spawned
     public float offsetRange = 1f; // Maximum offset range for randomizing spawn positions
     public GameObject floor; // Reference to the Floor GameObject
+    public DifficultySO difficultySO;
 
     void Start()
     {
+        quantity = difficultySO.Difficulty;
+
         // Spawn NPCs
         SpawnNPCs();
     }
