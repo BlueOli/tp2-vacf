@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;    // Movement speed
+    public float moveSpeed = 6f;    // Movement speed
     public float sprintSpeed = 8f;  // Sprint speed
     public float jumpForce = 5f;   // Jump force
 
@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private bool isGrounded;
 
+    public bool isGrabbingNPC = false;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -20,6 +22,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if (isGrabbingNPC)
+        {
+            return;
+        }
+
         // Check if the player is grounded
         isGrounded = Physics.Raycast(transform.position, Vector3.down, GetComponent<Collider>().bounds.extents.y + 0.1f); ;
 

@@ -5,6 +5,7 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenuUI;
+    public AudioSource audioSource;
 
     private void Start()
     {
@@ -27,5 +28,14 @@ public class PauseMenu : MonoBehaviour
 
         // Pause/unpause the game time
         Time.timeScale = (pauseMenuUI.activeSelf) ? 0f : 1f;
+
+        if(!pauseMenuUI.activeSelf)
+        {
+            audioSource.Play();
+        }
+        else
+        {
+            audioSource.Pause();
+        }
     }
 }

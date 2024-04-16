@@ -6,6 +6,8 @@ TagManager:
   tags:
   - NPC
   - Grabbable
+  - Dead_NPC
+  - CenterTarget
   layers:
   - Default
   - TransparentFX
