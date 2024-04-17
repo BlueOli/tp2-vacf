@@ -158,5 +158,5 @@ MonoBehaviour:
   isDead: 0
   centerTarget: {fileID: 0}
   timeToSwitchBehavior: 8
-  standTillTime: 8
+  standTillTime: 6
   canMove: 0

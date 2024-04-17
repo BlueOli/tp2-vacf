@@ -22,7 +22,7 @@ public class NPCController : MonoBehaviour
     private bool hasReachedCenter = false; // Flag to indicate if NPC has reached the center
     private float firstMoveElapsedTime = 0f; // Elapsed time since moving to center
     private float stillElapsedTime = 0f; // Elapsed time since standing still
-    public float standTillTime = 8f; // Time to stop standing still
+    public float standTillTime = 6f; // Time to stop standing still
     public bool canMove = false; // Flag to know if NPCs can move
 
     void Start()
